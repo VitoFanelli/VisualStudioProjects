@@ -4,14 +4,14 @@ void aritmetica ( void )
 {
     
     // titolo
-    printf ( "\t3. L'aritmetica in C\n\n" ) ;
+    puts ( "\t3. L'aritmetica in C\n" ) ;
 
     int numero1, numero2 ;
 
-    printf ( "\t\tInserisci il primo numero: " ) ;
+    printf ( "%s", "\t\tInserisci il primo numero: " ) ;
     scanf ( "%d", &numero1 ) ;
 
-    printf ( "\t\tInserisci il secondo numero: " ) ;
+    printf ( "%s", "\t\tInserisci il secondo numero: " ) ;
     scanf ( "%d", &numero2 ) ;
 
     // operatori: +, -, *, /, % (resto divisione)

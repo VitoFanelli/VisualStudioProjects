@@ -4,14 +4,14 @@ void selezione ( void )
 {
     
     // titolo
-    printf ( "\t4. La selezione\n\n" ) ;
+    puts ( "\t4. La selezione\n" ) ;
 
     int numero1, numero2 ;
 
-    printf ( "\t\tInserisci il primo numero: " ) ;
+    printf ( "%s", "\t\tInserisci il primo numero: " ) ;
     scanf ( "%d", &numero1 ) ;
 
-    printf ( "\t\tInserisci il secondo numero: " ) ;
+    printf ( "%s", "\t\tInserisci il secondo numero: " ) ;
     scanf ( "%d", &numero2 ) ;
 
     // selezione singola
@@ -26,7 +26,7 @@ void selezione ( void )
     puts ( "\t\tLe istruzioni nel corpo dell' 'if' vengono eseguite solo se la condizione risulta vera," ) ;
     puts ( "\t\taltrimenti vengono eseguite le istruzioni nel corpo dell' 'else'." ) ;
     puts ( "\t\tSolo uno dei due gruppi di istruzioni viene eseguito, in base alla condizione:\n" ) ;
-    
+
     if ( numero1 == numero2 ) puts ( "\t\ti due numeri sono uguali.\n" ) ;
     else puts ( "\t\ti due numeri sono diversi.\n" ) ;
     
