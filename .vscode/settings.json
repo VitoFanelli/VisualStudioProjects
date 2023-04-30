@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "*.rmd": "markdown",
+        "stdio.h": "c",
+        "01_compilazione.h": "c"
+    }
+}
