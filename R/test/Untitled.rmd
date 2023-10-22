@@ -1,0 +1,28 @@
+---
+title: "Test RMD"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+```
+
+### Chart A
+
+```{r}
+
+```
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+

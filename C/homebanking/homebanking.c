@@ -3,10 +3,12 @@
 
 #include <stdio.h>
 #include "check_credentials.h"
+#include "test.h"
 
 void main (void)
 {
     char username[30], password[30];
+    int x = 100;
 
     printf ("\tBenvenuto nel servizio di homebanking della tua Banca.\n\n");
     
@@ -21,12 +23,15 @@ void main (void)
     // controllo credenziali
     if (check_credentials(username, password) == 0)
     {
-      printf ("\tAccesso OK.");
+      printf ("\tAccesso OK.\n");
     } 
     else
     {
-      printf ("\tAccesso negato.");
+      printf ("\tAccesso negato.\n");
     }    
+
+    test();
+    printf("%d", x);
 
 }
 

@@ -5,22 +5,25 @@
 #include <stdlib.h>
 
 // moduli
-#include "./moduli/00_scelta_modulo.h"
+#include "./moduli/00_indice.h"
 #include "./moduli/01_compilazione.h"
 #include "./moduli/02_input_output.h"
 #include "./moduli/03_aritmetica.h"
 #include "./moduli/04_selezione.h"
+#include "./moduli/05_iterazione.h"
 
-// ... dichiarazione variabili globali
+// dichiarazione di variabili globali
+// prototipi di funzioni utente
+// definizione di costanti
 
 // procedura principale del programma
-void main ( void )
+int main ( void )
 {
 
     puts ( "\tBenvenuto al corso di Programmazione 1 di Unipegaso.\n" ) ;
 
-    // 00. Scelta del modulo
-    int lezione = scelta_modulo();
+    // 00. Indice
+    int lezione = indice();
 
     while ( lezione != 0 )
     {
@@ -50,6 +53,13 @@ void main ( void )
                 selezione();
                 break ;
 
+            // 05. Iterazione
+            case 5 :
+                printf ( "%s", "\n" ) ;
+                iterazione();
+                break ;
+
+            // Altra scelta
             default :
                 printf ( "%s", "\n" ) ;
                 puts ( "\tLezione non disponibile.\n" ) ;
@@ -57,12 +67,13 @@ void main ( void )
 
         }
 
-        lezione = scelta_modulo();
+        // 00. Indice
+        lezione = indice();
 
     }
 
     // evita chiusura immediata del prompt
-    system("pause");
+    system ( "pause" ) ;
 
 }
 // fine del programma (main)
